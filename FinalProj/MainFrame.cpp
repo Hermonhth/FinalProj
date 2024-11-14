@@ -63,7 +63,7 @@ void MainFrame::OnSearchButtonClicked(wxCommandEvent& evt)
     CURLcode res;
     std::string readBuffer;
 
-    std::string apiKey = "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";  // Securely manage your API key
+    std::string apiKey = "";  // Securely manage your API key
     std::string foodName = input->GetValue().ToStdString();
 
     nlohmann::json jsonPayload = {
@@ -137,7 +137,7 @@ void MainFrame::GenerateImage(const std::string& foodName)
     CURL* curl;
     CURLcode res;
     std::string imageResponse;
-    std::string apiKey = "sk-proj-USKa-pXVVF4wB5XdHY4AEer7VT6e80ewXz6UE3s9KZ0h_RKdyAPTC_EOVaqDn0VkpjE2Z78kheT3BlbkFJsE1fgf8jeg-l2fCCoI79m-7jO6dA1wgmByl0D6qQQ_R3YyiLwpBElhBZoxFXjCXI5HRRXITuYAY";  // Replace with your OpenAI API key
+    std::string apiKey = "";  // Replace with your OpenAI API key
 
     // Construct the JSON payload for image generation
     nlohmann::json jsonImagePayload = {
